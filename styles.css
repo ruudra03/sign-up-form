@@ -22,14 +22,68 @@ body {
 }
 
 /* Main */
-#californian_weekly {
+#californian-weekly {
   height: 100%;
-  background-color: bisque;
+  margin: 0 10%;
 
   display: flex;
 }
 
-#bg_img {
+#californian-weekly > * {
+  flex: 1;
+}
+
+#californian-weekly #sign-up {
+  flex: 2;
+}
+
+#bg-img .backgound {
+  display: block;
   height: 100%;
-  width: auto;
+  width: 100%;
+}
+
+#sign-up {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#sign-up .container {
+  padding: 0 48px;
+  background-color: whitesmoke;
+}
+
+#sign-up .container .user-info {
+  border: none;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#sign-up .container .user-info > .field {
+  flex: 1;
+  flex-basis: 50%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+#sign-up > span {
+  display: inline-block;
+  padding: 0 48px;
+}
+
+#sign-up .form-btn {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 8px 16px;
+}
+
+#sign-up .form-terms {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 8px 16px;
 }

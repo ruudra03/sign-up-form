@@ -6,78 +6,69 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <main id="californian_weekly">
-      <img
-        id="bg_img"
-        src="./images/monument_valley.jpg"
-        alt="Image of Monument Valley"
-      />
-      <form id="sign_up">
-        <span class="form-info">
+    <main id="californian-weekly">
+      <div id="bg-img">
+        <img
+          class="backgound"
+          src="./images/monument_valley.jpg"
+          alt="Image of Monument Valley"
+        />
+      </div>
+
+      <form id="sign-up">
+        <span>
           This is not a real online service! You know you need something like
-          this in your life to help you realize your deepest dreams. Sign up now
-          to get started.
+          this in your life to help you realize your deepest dreams.
+          <br />
+          Sign up now to get started.
         </span>
 
-        <span class="form-instruction">You know you want to.</span>
+        <span>You know you want to.</span>
 
-        <fieldset class="form-container">
-          <legend class="form-legend">Let's do this!</legend>
+        <div class="container">
+          <span>Let's do this!</span>
+          <fieldset class="user-info">
+            <div class="field">
+              <label for="first_name">FIRST NAME</label>
+              <input type="text" name="firstName" id="first_name" />
+            </div>
 
-          <label class="form-label" for="first_name">First Name</label>
-          <input
-            class="form-input"
-            type="text"
-            name="firstName"
-            id="first_name"
-          />
+            <div class="field">
+              <label for="last_name">LAST NAME</label>
+              <input type="text" name="lastName" id="last_name" />
+            </div>
 
-          <label class="form-label" for="last_name">Last Name</label>
-          <input
-            class="form-input"
-            type="text"
-            name="lastName"
-            id="last_name"
-          />
+            <div class="field">
+              <label for="user_email">EMAIL</label>
+              <input type="email" name="userEmail" id="user_email" />
+            </div>
 
-          <label class="form-label" for="user_email">Email</label>
-          <input
-            class="form-input"
-            type="email"
-            name="userEmail"
-            id="user_email"
-          />
+            <div class="field">
+              <label for="user_phone">PHONE</label>
+              <input type="tel" name="userPhone" id="user_phone" />
+            </div>
 
-          <label class="form-label" for="user_phone">Phone</label>
-          <input
-            class="form-input"
-            type="tel"
-            name="userPhone"
-            id="user_phone"
-          />
+            <div class="field">
+              <label for="password">PASSWORD</label>
+              <input type="password" name="password" id="password" />
+            </div>
 
-          <label class="form-label" for="password">Password</label>
-          <input
-            class="form-input"
-            type="password"
-            name="password"
-            id="password"
-          />
-
-          <label class="form-label" for="confirm_password"
-            >Confirm Password</label
-          >
-          <input
-            class="form-input"
-            type="confirmPassword"
-            name="password"
-            id="confirm_password"
-          />
-        </fieldset>
+            <div class="field">
+              <label for="confirm_password">CONFIRM PASSWORD</label>
+              <input
+                type="confirmPassword"
+                name="password"
+                id="confirm_password"
+              />
+            </div>
+          </fieldset>
+        </div>
 
         <button class="form-btn" type="submit">Sign-up for newsletter</button>
 
-        <a href="#" referrerpolicy="no-referrer">Terms & Conditions</a>
+        <a class="form-terms" href="#" referrerpolicy="no-referrer"
+          >Terms & Conditions</a
+        >
       </form>
     </main>
   </body>
