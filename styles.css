@@ -21,6 +21,14 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+img {
+  display: block;
+}
+
+span {
+  display: inline-block;
+}
+
 /* Main */
 #californian-weekly {
   height: 100%;
@@ -38,7 +46,6 @@ body {
 }
 
 #bg-img .backgound {
-  display: block;
   height: 100%;
   width: 100%;
 }
@@ -47,11 +54,18 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 24px;
 }
 
 #sign-up .container {
-  padding: 0 48px;
+  padding: 12px 48px 48px;
   background-color: whitesmoke;
+}
+
+#sign-up .container .header {
+  padding: 12px 0;
+  font-size: 22px;
+  font-weight: 900;
 }
 
 #sign-up .container .user-info {
@@ -69,16 +83,34 @@ body {
   flex-direction: column;
 }
 
+#sign-up .container .user-info > .field > label {
+  font-size: 12px;
+  font-weight: 300;
+}
+
+#sign-up .container .user-info > .field > input {
+  padding: 4px 8px;
+  border: 2px solid #e5e7eb;
+  border-radius: 2px;
+}
+
 #sign-up > span {
-  display: inline-block;
   padding: 0 48px;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 #sign-up .form-btn {
   display: flex;
   justify-content: center;
   margin: 0 auto;
+  border: none;
+  border-radius: 4px;
   padding: 8px 16px;
+  background-color: #83623e;
+  color: white;
+  font-size: 14px;
+  font-weight: 900;
 }
 
 #sign-up .form-terms {
@@ -86,4 +118,5 @@ body {
   justify-content: center;
   margin: 0 auto;
   padding: 8px 16px;
+  font-size: 11px;
 }
