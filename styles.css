@@ -30,77 +30,74 @@ span {
 }
 
 /* Main */
-#californian-weekly {
+#sign-up {
   height: 100%;
-  margin: 0 10%;
 
   display: flex;
 }
 
-#californian-weekly > * {
+#side-img {
   flex: 1;
-}
 
-#californian-weekly #sign-up {
-  flex: 2;
-}
-
-#bg-img .backgound {
   height: 100%;
   width: 100%;
 }
 
-#sign-up {
+#form {
+  flex: 2;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 24px;
 }
 
-#sign-up .container {
+#form .container {
   padding: 12px 48px 48px;
   background-color: whitesmoke;
 }
 
-#sign-up .container .header {
+#form .title {
   padding: 12px 0;
   font-size: 22px;
   font-weight: 900;
 }
 
-#sign-up .container .user-info {
+#form fieldset {
   border: none;
 
   display: flex;
   flex-wrap: wrap;
+  gap: 10%;
 }
 
-#sign-up .container .user-info > .field {
-  flex: 1;
-  flex-basis: 50%;
+#form fieldset > div {
+  width: 40%;
 
   display: flex;
   flex-direction: column;
+
+  border: 1px solid green;
 }
 
-#sign-up .container .user-info > .field > label {
+#form fieldset label {
   font-size: 12px;
   font-weight: 300;
 }
 
-#sign-up .container .user-info > .field > input {
+#form fieldset input {
   padding: 4px 8px;
   border: 2px solid #e5e7eb;
   border-radius: 2px;
 }
 
-#sign-up > span {
+#form > span {
   padding: 0 48px;
   font-size: 18px;
   font-weight: 600;
 }
 
-#sign-up .form-btn {
+#submit-btn {
   display: flex;
   justify-content: center;
   margin: 0 auto;
@@ -113,7 +110,7 @@ span {
   font-weight: 900;
 }
 
-#sign-up .form-terms {
+#form a {
   display: flex;
   justify-content: center;
   margin: 0 auto;

@@ -6,16 +6,14 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <main id="californian-weekly">
-      <div id="bg-img">
-        <img
-          class="backgound"
-          src="./images/monument_valley.jpg"
-          alt="Image of Monument Valley"
-        />
-      </div>
+    <main id="sign-up">
+      <img
+        id="side-img"
+        src="./images/monument_valley.jpg"
+        alt="Image of Monument Valley"
+      />
 
-      <form id="sign-up">
+      <form id="form">
         <span>
           This is not a real online service! You know you need something like
           this in your life to help you realize your deepest dreams.
@@ -26,49 +24,48 @@
         <span>You <em>know</em> you want to.</span>
 
         <div class="container">
-          <span class="header">Let's do this!</span>
-          <fieldset class="user-info">
-            <div class="field">
+          <span class="title">Let's do this!</span>
+          <fieldset>
+            <div>
               <label for="first_name">FIRST NAME</label>
               <input type="text" name="firstName" id="first_name" />
             </div>
 
-            <div class="field">
+            <div>
               <label for="last_name">LAST NAME</label>
               <input type="text" name="lastName" id="last_name" />
             </div>
 
-            <div class="field">
+            <div>
               <label for="user_email">EMAIL</label>
               <input type="email" name="userEmail" id="user_email" />
             </div>
 
-            <div class="field">
+            <div>
               <label for="user_phone">PHONE</label>
               <input type="tel" name="userPhone" id="user_phone" />
             </div>
 
-            <div class="field">
+            <div>
               <label for="password">PASSWORD</label>
-              <input type="password" name="password" id="password" />
+              <input type="password" name="password" id="password" required />
             </div>
 
-            <div class="field">
+            <div>
               <label for="confirm_password">CONFIRM PASSWORD</label>
               <input
                 type="confirmPassword"
                 name="password"
                 id="confirm_password"
+                required
               />
             </div>
           </fieldset>
         </div>
 
-        <button class="form-btn" type="submit">Sign-up for newsletter</button>
+        <button id="submit-btn" type="submit">Sign-up for newsletter</button>
 
-        <a class="form-terms" href="#" referrerpolicy="no-referrer"
-          >Terms & Conditions</a
-        >
+        <a href="#" referrerpolicy="no-referrer">Terms & Conditions</a>
       </form>
     </main>
   </body>
